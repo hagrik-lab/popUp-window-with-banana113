@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    background: url('https://kolokon.com/wp-content/uploads/2021/05/8-Cosas-que-NO-sabias-de-los-diferentes-tipos-de-penes-1280x720-1.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.active.main-container {
+    filter: brightness(0.7) blur(10px);
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #E3CF57;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.popUp-window {
+    position: fixed;
+    height: 170px;
+    width: 300px;
+    background-color: #E3CF57;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin-left: 5px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+
+.active.popUp-window {
+    visibility: hidden;
+
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
+.popUp-btn {
+    margin-top: 15px;
+    padding: 17px 0px;
+    background-color: red;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.popUp-btn:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: skyblue;
+}
